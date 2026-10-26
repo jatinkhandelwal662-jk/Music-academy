@@ -1,13 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/Music-academy",
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
-  reactCompiler: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ['images.unsplash.com', 'res.cloudinary.com']
+    }
 };
 
 export default nextConfig;
