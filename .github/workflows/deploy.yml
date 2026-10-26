@@ -32,6 +32,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Disable Jekyll (Fix _next assets 404)
+        run: touch ./out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
