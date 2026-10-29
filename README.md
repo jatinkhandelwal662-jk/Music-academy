@@ -31,8 +31,8 @@ Make sure you have Node.js installed on your machine (v18.17.0 or higher is reco
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/jk-music-academy.git
-   cd jk-music-academy
+   git clone https://github.com/your-username/music-academy.git
+   cd music-academy
    ```
 
 2. Install dependencies:
