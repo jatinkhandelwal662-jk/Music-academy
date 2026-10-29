@@ -89,10 +89,4 @@ Make sure you have Node.js installed on your machine (v18.17.0 or higher is reco
 - **Courses:** You can easily add, remove, or modify courses by editing the `src/data/music_courses.json` file.
 - **Colors:** The dark-mode primary colors are defined in `src/app/globals.css`. You can tweak the `oklch` values to match your specific branding.
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
-
-## 📄 License
-
 This project is built for educational and portfolio purposes. Feel free to use it and modify it for your own needs!
