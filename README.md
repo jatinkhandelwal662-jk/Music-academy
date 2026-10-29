@@ -1,40 +1,98 @@
-## Build this project to learn how Next.js works
+# 🎵 JK Music Academy
 
+A modern, visually stunning web application for a music school built with Next.js, TypeScript, and Aceternity UI. This project features interactive animations, 3D card effects, and a fully responsive design to showcase music courses, professional instructors, and student testimonials.
 
+## ✨ Features
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+- **Immersive Animations:** Utilizes Framer Motion and Aceternity UI for smooth, eye-catching effects (Spotlights, Wavy Backgrounds, Infinite Moving Cards, Sticky Scroll, Background Beams).
+- **Course Catalog (`/courses`):** Browse available music courses rendered dynamically using 3D hover-effect cards.
+- **Instructors & Webinars:** Engaging UI to showcase faculty with animated tooltips and upcoming webinars with hover-reveal cards.
+- **Interactive Contact Page (`/contact`):** A beautiful contact form featuring deep-space meteor effects and dynamic background beams.
+- **Modern Tech Stack:** Built on Next.js App Router, React 19, and Tailwind CSS v4.
+- **Dark Theme:** Beautifully crafted dark-mode-first interface out of the box.
 
-## Getting Started
+## 🚀 Tech Stack
 
-First, run the development server:
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Aceternity UI](https://ui.aceternity.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **Animations:** [Framer Motion](https://motion.dev/) & `tw-animate-css`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine (v18.17.0 or higher is recommended).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/jk-music-academy.git
+   cd jk-music-academy
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── app/                 # Next.js App Router pages (Home, Courses, Contact)
+│   │   ├── globals.css      # Global Tailwind and Shadcn CSS variables
+│   │   ├── layout.tsx       # Root layout containing the Navbar
+│   │   └── page.tsx         # Main landing page
+│   ├── components/          # Reusable UI sections (Hero, Footer, Instructors)
+│   │   └── ui/              # Base Aceternity/Framer Motion animated components
+│   ├── data/                # JSON data for rendering courses
+│   ├── lib/                 # Utility functions (e.g., class merging)
+│   └── utils/               # Additional utilities
+├── public/                  # Static assets (images, icons)
+├── tailwind.config.ts       # Tailwind CSS configuration and custom plugins
+└── next.config.ts           # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - Starts the development server.
+- `npm run build` - Builds the app for production.
+- `npm run start` - Starts the production server.
+- `npm run lint` - Runs ESLint to check for code issues.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💡 Customization
 
-## Learn More
+- **Courses:** You can easily add, remove, or modify courses by editing the `src/data/music_courses.json` file.
+- **Colors:** The dark-mode primary colors are defined in `src/app/globals.css`. You can tweak the `oklch` values to match your specific branding.
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is built for educational and portfolio purposes. Feel free to use it and modify it for your own needs!
